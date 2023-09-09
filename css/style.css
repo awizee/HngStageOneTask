@@ -53,7 +53,7 @@ a {
   margin-top: 5em;
   color: #000;
   border-radius: 0.5em;
-  cursor: hand;
+  cursor: pointer;
 }
 
 @media screen and (max-width:475px) {
@@ -67,12 +67,10 @@ a {
         min-height: 100vh;
     }
     .container {
-        background-color: #7fffd4;
         background-image: url('../bgImage/one.png');
         background-size: cover;
         background-repeat: no-repeat;
         width: 90vw;
-        /* height: 90vh; */
         text-align: center;
         padding: 1rem;
         border-radius: 1em;
@@ -93,6 +91,6 @@ a {
         padding: 2px;
         color: #000;
         border-radius: 4px;
-        cursor: hand;
+        cursor: pointer;
       }
 }
