@@ -2,7 +2,7 @@ let time = document.getElementById("currentUTCTime");
 let date = document.getElementById("currentDayOfTheWeek");
 let d = new Date();
 
-const newDate = date.innerHTML = `${'<span> Date: </span>'} ${d.toLocaleDateString()}`;//d.getDate() + '/' + d.getMonth() + '/' + d.getFullYear();
+const newDate = date.innerHTML = `${'<span> Date: </span>'} ${d.toUTCString()}`;//d.getDate() + '/' + d.getMonth() + '/' + d.getFullYear();
 
 setInterval(() => {
   let d = new Date();
