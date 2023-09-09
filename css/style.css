@@ -64,11 +64,32 @@ a {
         box-sizing: border-box;
     }
     body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         background-color: #ebd2d2ea;
-
-        padding: 1rem;
+        padding: 0;
         min-width: 100vw;
         min-height: 100vh;
+    }
+    .container {
+        background-color: #7fffd4;
+        background-image: url('/one.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100vw;
+        height: 100vh;
+        text-align: center;
+        padding: 1rem;
+        border-radius: 1em;
+      }
+    .content {
+        background-color: rgba(250, 235, 215, 0.74);
+        margin: 0;
+        width: 100%;
+        border-radius: 3px;
+        background-repeat: no-repeat;
     }
     a {
         border: 2px #333 solid;
