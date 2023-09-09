@@ -12,7 +12,11 @@ body {
   min-height: 100vh;
 }
 .container {
-  background-image: url('../bgImage/one.png');
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../bgImage/one.png");
   background-size: cover;
   background-repeat: no-repeat;
   width: 50vw;
@@ -22,14 +26,15 @@ body {
 }
 img {
   width: 50%;
-  border-radius: 1em;
+  border-radius: 50%;
   margin-bottom: 0;
 }
 .content {
-    background-color: rgba(250, 235, 215, 0.74);
-    border-radius: 3px;
-    background-repeat: no-repeat;
-    margin-top: 0;
+  background-color: rgba(250, 235, 215, 0.74);
+  border-radius: 3px;
+  width: 90%;
+  background-repeat: no-repeat;
+  margin-top: 0;
 }
 .time {
   color: #000;
@@ -49,48 +54,52 @@ a {
   border: 2px #fff solid;
   background-color: #90d8c0;
   text-decoration: none;
-  padding: 0.3em;
-  margin-top: 5em;
+  padding: 1em;
+  margin-top: 2em;
   color: #000;
   border-radius: 0.5em;
-  cursor: pointer;
 }
 
-@media screen and (max-width:475px) {
-    * {
-        box-sizing: border-box;
-    }
-    body {
-        background-color: #746f6fea;
-        margin: auto;
-        min-width: 100vw;
-        min-height: 100vh;
-    }
-    .container {
-        background-image: url('../bgImage/one.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        width: 90vw;
-        text-align: center;
-        padding: 1rem;
-        border-radius: 1em;
-      }
-    .content {
-        background-color: rgba(250, 235, 215, 0.74);
-        width: 100%;
-        border-radius: 3px;
-        background-repeat: no-repeat;
-    }
-    p,.time {
-        font-size: 1rem;
-}
-    a {
-        border: 2px #333 solid;
-        background-color: #90d8c0;
-        text-decoration: none;
-        padding: 2px;
-        color: #000;
-        border-radius: 4px;
-        cursor: pointer;
-      }
+@media screen and (max-width: 475px) {
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    background-color: #746f6fea;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    min-width: 100vw;
+    min-height: 100vh;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../bgImage/one.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 90vw;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 1em;
+  }
+  .content {
+    background-color: rgba(250, 235, 215, 0.74);
+    width: 100%;
+    border-radius: 3px;
+    background-repeat: no-repeat;
+  }
+  p,
+  .time {
+    font-size: 2rem;
+  }
+  a {
+    border: 2px #333 solid;
+    background-color: #90d8c0;
+    text-decoration: none;
+    padding: 2px;
+    color: #000;
+    border-radius: 4px;
+    cursor: pointer;
+  }
 }

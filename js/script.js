@@ -1,14 +1,29 @@
-let time = document.getElementById("currentUTCTime");
-let date = document.getElementById("currentDayOfTheWeek");
-let d = new Date();
+const setTime = new Date();
 
-let newDate = (date.innerHTML = `${"<span> Date: </span>"} ${
-  d.getDate() + "/" + d.getMonth() + "/" + d.getFullYear()
-}`);
+const weekDay = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];
+const day = weekDay[setTime.getDay()];
+const currentDay = document.getElementById("currentDay");
+currentDay.innerHTML = day;
 
-setInterval(() => {
-  let d = new Date();
-  return (time.innerHTML = `${"<span> Time: </span>"} ${
-    d.getHours() + ":" + d.getMinutes() + ":" + d.getMilliseconds()
-  }`);
-}, 1000);
+function updateTime() {
+  const currentTime = document.getElementById("currentTime");
+}
+
+function updateUTCTime() {
+  const currentUTCTime = new Date().getTime();
+
+  currentTime.innerHTML = currentUTCTime;
+}
+
+updateUTCTime();
+setInterval(updateUTCTime, 1);
+
+updateTime();

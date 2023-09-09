@@ -8,21 +8,24 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    
+    
     <div class="container">
       <div>
-        <img src="slackimg.jpg" alt="Dev_awizee" />
+        <img src="slackimg.jpg" alt="dev_awizee" />
       </div>
     
       <div class="content"> 
        
         <p class="pg">
-          <span id="slackUserName"> Name: dev_awizee </span><br />
-          <span id="myTrack"> Track: FrontEnd </span> <br /> <br>
+          <span data-testid="slackUserName"> Name: dev_awizee </span><br />
+          <span data-testid="myTrack"> Track: FrontEnd </span>
+          <h1>Current Day</h1>
+          <div  class="time" id="currentDay" data-testid="currentDayOfTheWeek"></div>
+          <h1>Current UTC Time</h1>
+          <div class="time" id="currentTime" data-testid="currentUTCTime"></div> <br />
           <a href="https://github.com/awizee/HngStageOneTask" id="githubURL"
           >GitHub Link</a>
-          
-          <div class="time" id="currentDayOfTheWeek"></div>
-          <div class="time" id="currentUTCTime"></div>
         </p>
         
       </div>
