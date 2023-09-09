@@ -12,7 +12,8 @@ body {
   min-height: 100vh;
 }
 .container {
-  background-image: url('/one.png');
+  background-color: rgb(65, 78, 202);
+  background-image: url('../bgImage/one.png');
   background-size: cover;
   background-repeat: no-repeat;
   width: 50vw;
@@ -68,7 +69,7 @@ a {
     }
     .container {
         background-color: #7fffd4;
-        background-image: url('/one.png');
+        background-image: url('../bgImage/one.png');
         background-size: cover;
         background-repeat: no-repeat;
         width: 90vw;
